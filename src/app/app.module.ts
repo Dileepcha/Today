@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { HomeComponent } from './home/home.component';
+import{ appRoute } from "./route"
 
 const appRoutes:Routes =[
   {
@@ -15,6 +16,7 @@ const appRoutes:Routes =[
     component :HomeComponent
   }
 ]
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +28,7 @@ const appRoutes:Routes =[
     CarouselModule.forRoot(),
     FormsModule,
     HttpClientModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoute),
   ],
   providers: [],
   bootstrap: [AppComponent]

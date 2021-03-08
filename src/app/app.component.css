@@ -1,0 +1,9 @@
+.app-nav {
+    height: 64px;
+    background-color: cyan;
+  }
+  .color{
+      color: blueviolet;
+      font-size: x-large;
+      font-family: 'Times New Roman', Times, serif;
+  }
